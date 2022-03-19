@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://apis.google.com/js/api.js"></script>
+
+    <script
+      type="text/javascript"
+      src="http://www.google.com/jsapi?key=AIzaSyAVWQVE-nGyE6D3qYimf8N4FjjV-L91A7w"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <title>Youtube Api Project</title>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="container">
+        <h1 class="page-title">Search Youtube with no distractions</h1>
+        <form method="GET" action="/search">
+          <input
+            autocomplete="off"
+            class="search-bar"
+            name="search_query"
+            id="search-field"
+            type="text"
+            placeholder="Search"
+          />
+          <button class="buttons" id="submit-button" type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="../server.js"></script>
+  <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+</html>
